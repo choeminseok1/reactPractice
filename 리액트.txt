@@ -1,0 +1,82 @@
+1. 노드js설치
+2. npm install
+3. npx creat-react-app 폴더이름
+4. npm start 
+5. cd 폴더이름 < 폴더로 들어가는것
+6. cd .. < 이전 폴더로 돌아가기
+
+package.json < 내가 설치한 라이브러리나, 프로그램 로그가 뜨는곳
+public < 이 폴더는 압축이 안되고 업로드 된다. 해상도나 변화가 일어나면 안되는 파일을 담음
+src < 압축가능
+
+cra로 시작 했을때는, 파일 확장자가 js or jsx 둘중 아무거나 상관없다. < 문법은 비슷하다.
+
+babel < 웹팩과 같이 파일 변환을 도와주는 확장팩 / 현재 구조이다. 스노우맨과 같이 다른 종류를 사용하면
+다르게 설치된다.
+
+컴파일러 - 파이썬,C++같은 언어. 컴퓨터가 바로 읽을 수 없기에 컴퓨터 언어로 번역해서 주는 기능
+
+app < 최상위 요소, html5의 body
+
+hooks - 리액트에서 사용할 수 있는 함수다. usestate < 일종의 함수 앞에붙는 use가 hooks를 뜻함
+             자주 쓰는 함수를 미리 만들어 놓는것
+
+컴포넌트화를 하기 위해선, 헷갈리니까 우선적으로 src에 별도 폴더를 만들고, 밑에 
+첫글자 대문자 파일.js를 만든다. 
+그 다음 만든 파일에 rfce+tap 으로 자동 완성 해준다. 
+
+export default RockScissorsPaper < 다음과 같이 디폴트가 포함되어있으면,
+중괄호를 생략하고
+import RockScissorsPaper from './components/RockScissorsPaper'; < 이런 형태로 불러 올 수 있다다.
+
+
+22.12.19
+리액트 = 상태관리 매니저
+
+지금까지 쓰던 함수방식은 잊자
+
+useState() 활용해서 함수 사용.
+
+fetch(받아올 주소)
+.then((임의 매개변수)=>매개변수.받아올방식(ex.json)) 
+.then((위에서 선언한 매개변수)=>setuseState(매개변수))
+
+fetch를 사용하면 promise 코드를 반환한다.
+promise는 3가지 상태를 가지고있다.
+
+pending = 응답대기중. 아직 값이 안온 상태
+fullfiled = 응답완료
+rejected = 응답실패(시간초과,서버오류,주소가 잘못됨)
+
+    for (let item = 0; item < a.length; item++) {
+      console.log(item)
+    } 
+
+c = create
+r = read
+u = update
+d = delete
+
+get = 받아오기
+post = 내보내기
+patch = 업데이트
+delete = 삭제
+
+
+$ npm install react-router-dom < 라우터 설치 구문
+  npm create vite@latest start(폴더이름) < vite 설치 구문 , 설치하고 들어가서 nodemodules 설치
+rfce < 생성구문
+crtl+shift_t = 바로전에 끈 문서 다시 키기
+
+
+
+221221_2 가위
+221221_3 패치 연습
+221221_4 패치,로딩 연습
+221229 todolist 상세 주석있음
+230101 router연습 
+230101_2 패치,로딩연습2
+230101_3 하드코딩데이터 배치 연습
+230101_4 하드코딩데이터 배치 연습2
+230101_5 패치,로딩연습 3
+230101_6 router 연습2

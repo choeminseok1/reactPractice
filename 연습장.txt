@@ -1,0 +1,18 @@
+230102 - 오늘의 목표(패치,로딩 스스로 구현하기)
+https://jsonplaceholder.typicode.com/users < api 주소
+div 버튼을 클릭했을때, fetch로 api 주소에서 데이터 받아와서, 아래쪽 div 3곳에 차례로 id,name,address의 city값 받아오기
+회사에서 안됐던 이유 고찰 
+1. 인터넷 환경이 엄청 안좋아서 리턴이 랜더링 될때 fetch의 응답값을 못받아옴 
+- 로딩으로 해결
+-     const [sellData,setSellData] = useState([
+        {
+            choice: '',
+            img:'',
+            
+
+        }
+    ])
+위 처럼 받아올 값을 미리 정의한다.
+
+key는 유니크한 값으로 정의하자
+
